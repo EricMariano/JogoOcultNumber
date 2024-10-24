@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="assets/send.svg">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jogo do Número Oculto</h1>
+
+        <form class="form1" id="form1">
+            <input type="password" placeholder="Digite o número oculto" id="ocult-number" min="0" max="100">
+            <button type="submit" class="btn-enviar"></button>
+        </form>
+
+        <form class="form2" id="form2">
+            <input type="number" name="select-number" id="guess-number" min="0" max="100" placeholder="Acerte o Número!">
+            <button type="submit" class="btn-enviar"></button>
+        </form>
+
+        <button onclick="reset()" class="btn-reset">Reset</button>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
